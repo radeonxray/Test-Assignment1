@@ -18,7 +18,12 @@ Assignment-link: https://github.com/datsoftlyngby/soft2019spring-test/blob/maste
 
 ## Exercise 2 (Black-box techniques)
 1. Derive test cases for the train scenario described below based on equivalence partitioning and boundary value analysis. Remember both valid and invalid test cases.
+  - Partitioning:
+  - Boundary value:
+  - Valid and invalid Test cases
 2. Does test case design help identify any weaknesses in the scenario description? Comment on that.
 Train Scenario
 Pricing must be identified based on this scenario:
 If you take your train before 9.30 am or in the afternoon after 4.00 pm until 7.30 pm (‘the rush hour’) you must pay full fare. A saver ticket is available for trains between 9.30 am and 4.00 pm, and after 7.30 pm.
+
+
