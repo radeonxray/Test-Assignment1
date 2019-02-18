@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>whiteboxTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Test_Assignment1$whiteboxTest.exec</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">whiteboxTest.java</span></div><h1>whiteboxTest.java</h1><pre class="source lang-java linenums">import org.junit.Assert;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+<span class="nc" id="L5">class whiteboxTest {</span>
+
+    @DisplayName(&quot;whiteBoxTestSEmptyArr&quot;)
+    @Test
+    void whiteBoxTestEmptyArr() {
+<span class="nc" id="L10">        whitebox wb = new whitebox();</span>
+<span class="nc" id="L11">        String[] myStringArray = new String[0];</span>
+<span class="nc" id="L12">        Assert.assertEquals(&quot;No numbers&quot;, wb.whiteBoxTest(myStringArray));</span>
+<span class="nc" id="L13">    }</span>
+
+    @DisplayName(&quot;whiteBoxTestTwoValues&quot;)
+    @Test
+    void whiteBoxTestTwoValues() {
+<span class="nc" id="L18">        whitebox wb = new whitebox();</span>
+<span class="nc" id="L19">        String[] myStringArray = new String[2];</span>
+<span class="nc" id="L20">        myStringArray[0] = &quot;9&quot;;</span>
+<span class="nc" id="L21">        myStringArray[1] = &quot;20&quot;;</span>
+<span class="nc" id="L22">        Assert.assertEquals(&quot;Minimum = 9; maximum = 20&quot;, wb.whiteBoxTest(myStringArray));</span>
+<span class="nc" id="L23">    }</span>
+
+
+    //This test will fail, due to the error in the original code
+    //See page 6 of https://www.itu.dk/%7Esestoft/papers/softwaretesting.pdf for how to correct the error
+    //Our assignment only asked us to take the provided code and set it up, so we could run white-box on the code,
+    //not fix any potential errors.
+    //I guess the assignment wanted us to use whitebox-testing to spot the error?
+    @DisplayName(&quot;whiteBoxTestSixValues&quot;)
+    @Test
+    void whiteBoxTestSixValues() {
+<span class="nc" id="L34">        whitebox wb = new whitebox();</span>
+<span class="nc" id="L35">        String[] myStringArray = new String[6];</span>
+<span class="nc" id="L36">        myStringArray[0] = &quot;9&quot;;</span>
+<span class="nc" id="L37">        myStringArray[1] = &quot;20&quot;;</span>
+<span class="nc" id="L38">        myStringArray[2] = &quot;40&quot;;</span>
+<span class="nc" id="L39">        myStringArray[3] = &quot;15&quot;;</span>
+<span class="nc" id="L40">        myStringArray[4] = &quot;2&quot;;</span>
+<span class="nc" id="L41">        myStringArray[5] = &quot;8&quot;;</span>
+<span class="nc" id="L42">        Assert.assertEquals(&quot;Minimum = 2; maximum = 40&quot;, wb.whiteBoxTest(myStringArray));</span>
+<span class="nc" id="L43">    }</span>
+
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
