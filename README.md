@@ -55,6 +55,7 @@ The thoughts behind my boundary values, is to test where the payment is either f
 
 ##### Working Notes
 Full pay/Rush Hour: time < 09:30 16-19:30 
+
 Save Money: 09:30 - 16:00 && time > 19:30
 
 
