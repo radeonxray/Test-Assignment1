@@ -41,11 +41,11 @@ According to the text, the tickets gets cheaper after 19:30, but is full price u
 
 #### Partitions
 
-[Full Pay] Valid Partitions: 16-19:30
-[Full Pay] InValid Partitions: 09:30-16:00
-[Save Money] Valid Partitions: 09:30-16:00 
-[Save Money] InValid Partitions: 16:00-19:30
-[Save Money] Valid Partition: 19:30- Some time BEFORE 09:30 - Based on the text, this partition can’t be defined exactly.
+- [Full Pay] Valid Partitions: 16-19:30
+- [Full Pay] InValid Partitions: 09:30-16:00
+- [Save Money] Valid Partitions: 09:30-16:00 
+- [Save Money] InValid Partitions: 16:00-19:30
+- [Save Money] Valid Partition: 19:30- Some time BEFORE 09:30 - Based on the text, this partition can’t be defined exactly.
 
 #### Boundary Values:
 
