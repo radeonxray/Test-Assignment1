@@ -8,6 +8,30 @@ Slides: https://github.com/datsoftlyngby/soft2019spring-test/blob/master/Slides/
 1. Rewrite Peter Sestoft’ code example 2.1 so it can be tested automatically with xUnit framework. You can find the example in his article on Systematic software testing: https://www.itu.dk/~sestoft/papers/softwaretesting.pdf
   - Done using Java and Intellij
   
+Original Code
+  ```java
+  public static void main ( String[] args )
+    {
+      int mi, ma;
+        if (args.length == 0) /* 1 */
+          System.out.println("No numbers");
+        else
+        {
+          mi = ma = Integer.parseInt(args[0]);
+          for (int i = 1; i < args.length; i++) /* 2 */
+        {
+
+        int obs = Integer.parseInt(args[i]);
+
+        if (obs > ma) ma = obs; /* 3 */
+        else if (mi < obs) mi = obs; /* 4 */
+        }
+        System.out.println("Minimum = " + mi + "; maximum = " + ma);
+        }
+}
+
+```
+  
   
 2. Write automated unit tests
   - Done using JUnit 5
