@@ -63,7 +63,7 @@ From looking at the current setup, the weakness I’m looking at, is that time s
 
 According to the text, the tickets gets cheaper after 19:30, but is full price until 09:30. So the obvious question is: when does Rush hour exactly being in the morning? 05:30? 06:00? 06:30? The text does not state!  
 
-#### Partitions
+#### Equivalance Partitions
 
 - [Full Pay] Valid Partitions: 16-19:30
 - [Full Pay] InValid Partitions: 09:30-16:00
